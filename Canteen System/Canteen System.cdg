@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Canteen System">
+  <ClassDiagramComponents>
+    <Class name="Author" package="" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="CanteenSystem" package="" visibility="public" xPosition="269.0" yPosition="20.0">
+      <Fields>
+        <Field name="Author_PIN" type="int" visibility="package" isStatic="true"/>
+        <Field name="NSUer_PIN" type="int" visibility="package" isStatic="true"/>
+        <Field name="token" type="int" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="UpdateFood" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="OrderFood" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Food" package="" visibility="public" xPosition="508.0" yPosition="29.0">
+      <Fields>
+        <Field name="foodname" type="String" visibility="package"/>
+        <Field name="price" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="foodname"/>
+          <Argument type="int" name="price"/>
+          <Argument type="int" name="availability"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Nsuer" package="" visibility="public" xPosition="843.0" yPosition="29.0">
+      <Fields>
+        <Field name="Name" type="String" visibility="private"/>
+        <Field name="Id" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="Name"/>
+          <Argument type="String" name="Department"/>
+          <Argument type="int" name="Id"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getDepartment" returnType="String" visibility="public"/>
+        <Method name="setDepartment" returnType="void" visibility="public">
+          <Argument type="String" name="department"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
